@@ -7,10 +7,11 @@
   </div>
 </div>
 <div class="side_bar_bottom">
-  <div class=chat_list>
-    <a href="">techroom1</a>
-  </div>
-  <div class=chat_list>
-    <a href="">techroom2</a>
-  </div>
+  <% current_user.rooms.each do |room| %>
+    <div class="chat_list">
+      <div class="room-name">
+        <%= link_to "チャットを作成する", new_room_path %>
+      </div>
+    </div>
+  <%end%>
 </div>
