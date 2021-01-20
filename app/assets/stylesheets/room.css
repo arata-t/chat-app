@@ -125,3 +125,5 @@ select {
 
 .field_with_errors {
   display: contents;
+} 
+/* ↑ここで}で閉じることを忘れた */
